@@ -1,0 +1,109 @@
+/* ===== عام ===== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  direction: rtl;
+  background: #eef2f5;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ===== تسجيل الدخول ===== */
+.login-card {
+  width: 350px;
+  margin: 120px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.login-card input,
+.login-card button {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.login-card button {
+  background: #1976d2;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.login-card button:hover {
+  background: #155a9c;
+}
+
+/* ===== صفحة الدروس ===== */
+.header {
+  background: #1976d2;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-logout {
+  background: #e53935;
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-logout:hover {
+  background: #ba000d;
+}
+
+.content {
+  display: flex;
+  height: calc(100vh - 60px);
+}
+
+.sidebar {
+  width: 280px;
+  background: white;
+  padding: 20px;
+  border-right: 1px solid #ccc;
+  overflow-y: auto;
+}
+
+.sidebar h3 {
+  margin-top: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 8px 0;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 5px;
+  background: #f5f5f5;
+}
+
+.sidebar li:hover {
+  background: #ddd;
+}
+
+.main-view {
+  flex: 1;
+  padding: 25px;
+  background: #fff;
+  overflow-y: auto;
+}
+
+.main-view h2 {
+  margin-top: 0;
+}
