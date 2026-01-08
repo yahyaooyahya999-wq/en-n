@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>منصة الدروس الاحترافية</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ===== الصفحة الرئيسية ===== -->
+<div class="page" id="loginPage">
+  <div class="card login-card">
+    <h2>تسجيل الدخول</h2>
+    <input type="email" id="email" placeholder="البريد الإلكتروني">
+    <input type="password" id="password" placeholder="كلمة المرور">
+    <button onclick="login()">دخول</button>
+  </div>
+</div>
+
+<!-- ===== صفحة الدروس ===== -->
+<div class="page hidden" id="lessonsPage">
+
+  <div class="header">
+    <h1>الدروس والتمارين</h1>
+    <button class="btn-logout" onclick="logout()">خروج</button>
+  </div>
+
+  <div class="content">
+
+    <div class="sidebar">
+      <h3>قائمة الدروس</h3>
+      <ul id="lessonsList"></ul>
+
+      <h3>التمارين</h3>
+      <ul id="exercisesList"></ul>
+    </div>
+
+    <div class="main-view">
+      <div id="lessonDetail">
+        <h2>اختر درسًا من القائمة</h2>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
